@@ -29,15 +29,6 @@ ActiveRecord::Schema.define(version: 2020_09_14_102156) do
     t.index ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource_type_and_resource_id"
   end
 
-  create_table "cart_items", force: :cascade do |t|
-    t.bigint "products_id", null: false
-    t.bigint "carts_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["carts_id"], name: "index_cart_items_on_carts_id"
-    t.index ["products_id"], name: "index_cart_items_on_products_id"
-  end
-
   create_table "carts", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
@@ -52,10 +43,12 @@ ActiveRecord::Schema.define(version: 2020_09_14_102156) do
   end
 
   create_table "order_items", force: :cascade do |t|
-    t.string "products_references"
-    t.string "orders_references"
+    t.bigint "products_id", null: false
+    t.bigint "orders_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["orders_id"], name: "index_order_items_on_orders_id"
+    t.index ["products_id"], name: "index_order_items_on_products_id"
   end
 
   create_table "orders", force: :cascade do |t|
@@ -110,9 +103,9 @@ ActiveRecord::Schema.define(version: 2020_09_14_102156) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "cart_items", "carts", column: "carts_id"
-  add_foreign_key "cart_items", "products", column: "products_id"
   add_foreign_key "carts", "users"
+  add_foreign_key "order_items", "orders", column: "orders_id"
+  add_foreign_key "order_items", "products", column: "products_id"
   add_foreign_key "orders", "carts", column: "carts_id"
   add_foreign_key "orders", "users", column: "users_id"
   add_foreign_key "product_categories", "categories", column: "categories_id"
