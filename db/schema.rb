@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_14_102156) do
+ActiveRecord::Schema.define(version: 2020_09_22_154352) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,13 +42,14 @@ ActiveRecord::Schema.define(version: 2020_09_14_102156) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "order_items", force: :cascade do |t|
+  create_table "line_items", force: :cascade do |t|
     t.bigint "products_id", null: false
-    t.bigint "orders_id", null: false
+    t.bigint "cart_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["orders_id"], name: "index_order_items_on_orders_id"
-    t.index ["products_id"], name: "index_order_items_on_products_id"
+    t.integer "quantity", default: 1
+    t.index ["cart_id"], name: "index_line_items_on_cart_id"
+    t.index ["products_id"], name: "index_line_items_on_products_id"
   end
 
   create_table "orders", force: :cascade do |t|
@@ -81,6 +82,7 @@ ActiveRecord::Schema.define(version: 2020_09_14_102156) do
     t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "price"
   end
 
   create_table "stocks", force: :cascade do |t|
@@ -104,8 +106,8 @@ ActiveRecord::Schema.define(version: 2020_09_14_102156) do
   end
 
   add_foreign_key "carts", "users"
-  add_foreign_key "order_items", "orders", column: "orders_id"
-  add_foreign_key "order_items", "products", column: "products_id"
+  add_foreign_key "line_items", "carts"
+  add_foreign_key "line_items", "products", column: "products_id"
   add_foreign_key "orders", "carts", column: "carts_id"
   add_foreign_key "orders", "users", column: "users_id"
   add_foreign_key "product_categories", "categories", column: "categories_id"

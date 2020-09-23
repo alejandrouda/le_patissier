@@ -2,8 +2,19 @@
     height: 60px;
     width: 385px;
     text-align: center;
-    // color: $white;
-    // background-color: #209DA2;
+    color: $white;
+    background-color: $blue;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.sm-button {
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    color: $white;
+    background-color: $blue;
     text-decoration: none;
     display: inline-block;
     margin: 0 auto;

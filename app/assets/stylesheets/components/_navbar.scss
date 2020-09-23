@@ -16,10 +16,23 @@
 .navbar-toggler {
   border: none;
   margin-top: -50px;
-  margin-left: -10px;
+  margin-left: -12px;
 }
 
 .navbar-cart {
   margin-top: -50px;
-  margin-right: -10px;
+}
+
+.navbar-brand {
+  margin-right: 0;
+
+}
+
+.navbar-menu {
+  margin-top: -45px;
+}
+
+.dropdown-menu-custom {
+position: absolute !important;
+float: right !important;
 }
