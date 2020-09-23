@@ -1,64 +1,21 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-
-  <button class="navbar-toggler navbar-menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <% if user_signed_in? %>
-        <li class="nav-item dropdown">
-          <%= image_tag "https://res.cloudinary.com/dqstmox0s/image/upload/c_scale,w_30/v1600848951/Components/menu_jqzggd.png", class: "dropdown-toggle navbar-menu", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-          <div class="dropdown-menu dropdown-menu-left dropdown-menu-custom" aria-labelledby="navbarDropdown">
-            <%= link_to "My account", "#", class: "dropdown-item" %>
-            <%= link_to "Cart", "#", class: "dropdown-item" %>
-            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-          </div>
-        </li>
-      <% else %>
-        <li class="nav-item navbar-menu">
-          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-        </li>
-      <% end %>
-    </ul>
-  </div>
-
-  <%= link_to "#", class: "navbar-brand" do %>
-    <%= image_tag "https://res.cloudinary.com/dqstmox0s/image/upload/v1597918339/Original_qkjicc.svg" %>
-  <% end %>
-
-
-  <%= link_to "#", class: "navbar-cart" do %>
-    <%= image_tag "https://res.cloudinary.com/dqstmox0s/image/upload/c_scale,w_36/v1600847484/Components/shopping-cart_1_a5twcq.png" %>
-  <% end %>
-
-</div>
-
-
-
-
-
-
-
-
-
 
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
       <% if user_signed_in? %>
         <div data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
             <%= image_tag "https://res.cloudinary.com/dqstmox0s/image/upload/c_scale,w_30/v1600848951/Components/menu_jqzggd.png", class: "dropdown-toggle navbar-menu", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-            <div class="dropdown-menu dropdown-menu-left dropdown-menu-custom" aria-labelledby="navbarDropdown">
+            <div class="dropdown-menu dropdown-menu-left dropdown-menu-custom dropdown-position" aria-labelledby="navbarDropdown">
               <%= link_to "My account", "#", class: "dropdown-item" %>
               <%= link_to "Cart", "#", class: "dropdown-item" %>
               <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
             </div>
         </div>
       <% else %>
-        <li class="nav-item navbar-menu">
-          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-        </li>
+        <div data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
+          <%= image_tag "https://res.cloudinary.com/dqstmox0s/image/upload/c_scale,w_30/v1600848951/Components/menu_jqzggd.png", class: "dropdown-toggle navbar-menu", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+          <div class="dropdown-menu dropdown-menu-left dropdown-menu-custom dropdown-position" aria-labelledby="navbarDropdown">
+            <%= link_to "Log in", new_user_session_path, class: "dropdown-item" %>
+          </div>
+        </div>
       <% end %>
 
   <%= link_to "#", class: "navbar-brand" do %>
