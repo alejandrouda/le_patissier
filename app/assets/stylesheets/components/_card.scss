@@ -1,0 +1,31 @@
+.bestseller-section {
+    display:flex;
+    overflow-x: scroll;
+    margin-top: 80px;
+}
+
+.bestseller-img {
+    width: 250px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.card-container {
+    position: relative;
+    text-align: center;
+}
+
+.bestseller-h3 {
+    position:absolute;
+    color: white;
+    bottom: 4px;
+    left: 70px;
+    font-size: 25px;
+
+    h3 {
+        font-size: 25px;
+    }
+
+
+}
