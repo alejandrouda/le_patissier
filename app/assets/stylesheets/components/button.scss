@@ -43,3 +43,51 @@
     display: inline-block;
     margin: 0 auto;
 }
+
+.orange-button {
+    background-color: $orange;
+    font-family: $headers-font;
+    font-weight: 700;
+    font-size: 21px;
+    color: $black;
+    text-decoration: none;
+    text-align: right;
+    padding: 20px 80px;
+    border-radius: 5px;
+    display: block;
+    box-shadow: 1px 0px 10px #00000047;
+    width: 100%;
+
+  
+    a {
+      color: rgb(20, 20, 20);
+      text-decoration: none;
+    }
+}
+
+.button-container {
+    display:flex;
+    position:relative;
+}
+
+.box-position {
+    position:absolute;
+    z-index:2;
+    left: 40px;
+    top: 12px;
+
+}
+
+.link {
+    color:$orange;
+    text-align:center;
+    display:block;
+    padding-bottom: 10px;
+    font-family: $body-font;
+    font-weight: 700;
+    font-size: 15px;
+    a {
+        color: $orange;
+        text-decoration: none;
+      }
+}

@@ -9,3 +9,16 @@ body {
     font-family: $headers-font;
     color: $black;
 }
+
+.contact-section{
+    background-color: $light-orange;
+    padding: 10px;
+    display:flex;
+    justify-content: space-around;
+    p {
+        font-weight: 700;
+        color: $black;
+        font-size: 12px;
+        font-family: $body-font;
+    }
+}

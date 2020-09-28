@@ -1,36 +1,87 @@
-    <%= render 'shared/navbar' %>
-    <%= render 'shared/banner' %>
-
+<%= render 'shared/navbar' %>
+<%= render 'shared/banner' %>
 
 <div class="main-container">
+    <%# -------> NUESTRA TIENDA BUTTON <------- %>
     <%= link_to "Nuestra tienda", "#", class: "large-button"%>
-
-
+    <%# -------> BESTESELLER SECTION<------- %>
     <h2 class="mt-5 mb-5 landing-title">Los más vendidos</h2>
-
     <div class="bestseller-section mb-5">
-
         <div class="card-container mr-4">
             <img src="https://res.cloudinary.com/dqstmox0s/image/upload/v1600957640/Components/photo-1555507036-ab1f4038808a_c6ef0k.jpg" alt="Croissant" class=bestseller-img>
             <div class="bestseller-h3">
                 <h3>Croissant</h3>
             </div> 
         </div>
-
         <div class="card-container mr-4">
             <img src="https://res.cloudinary.com/dqstmox0s/image/upload/v1600957642/Components/photo-1587339144367-f1cacbecac82_uimzwz.jpg" alt="Croissant" class=bestseller-img>
             <div class="bestseller-h3">
                 <h3>Pancakes</h3>
             </div> 
         </div>
-
         <div class="card-container mr-4">
             <img src="https://res.cloudinary.com/dqstmox0s/image/upload/v1600958432/Components/photo-1572928899385-6dc3b05531ce_vkbr3u.jpg" alt="Croissant" class=bestseller-img>
             <div class="bestseller-h3">
                 <h3>Macarons</h3>
             </div> 
         </div>
-
     </div>
-
+    <%# -------> DISEÑA TU CAJA BUTTON <------- %>
+    <div class="button-container">
+        <img src="https://res.cloudinary.com/dqstmox0s/image/upload/c_scale,w_50/v1601303465/Components/open_neipzk.png" alt="" class="box-position">
+        <%= link_to "Diseña tu caja", "#", class: "orange-button"%>
+    </div>
+    <%# -------> SERVICE CARDS <------- %>
+    <div class="service-card-section">
+        <div class="service-card-container">
+            <img src="https://res.cloudinary.com/dqstmox0s/image/upload/v1601305775/Components/offre-a-la-carte_f0dr5r.jpg" alt="Croissant" class=service-card-img>
+            <div class="service-card-h3">
+                <h3>Regalos corporativos</h3>
+                <p>Celebra a tus clientes, reconoce a tus empleados, y promueve la cultura de la empresa</p>
+                <%= link_to "Saber más", "#", class: "link" %>
+            </div> 
+        </div>
+        <div class="service-card-container">
+            <img src="https://res.cloudinary.com/dqstmox0s/image/upload/v1601305652/Components/GettyImages-1154103372_hlwebz.jpg" alt="Croissant" class=service-card-img>
+            <div class="service-card-h3">
+                <h3>Personaliza tu tarjeta</h3>
+                <p>Celebra a tus clientes, reconoce a tus empleados, y promueve la cultura de la empresa</p>
+                <%= link_to "Saber más", "#", class: "link" %>
+            </div> 
+        </div>
+        <div class="service-card-container">
+            <img src="https://res.cloudinary.com/dqstmox0s/image/upload/v1600957640/Components/photo-1555507036-ab1f4038808a_c6ef0k.jpg" alt="Croissant" class=service-card-img>
+            <div class="service-card-h3">
+                <h3>Programa tu entrega</h3>
+                <p>Celebra a tus clientes, reconoce a tus empleados, y promueve la cultura de la empresa</p>
+                <%= link_to "Saber más", "#", class: "link" %>
+            </div> 
+        </div>
+    </div>
 </div>
+    
+<%# -------> CONTACT SECTION <------- %>
+<div class="contact-section">
+    <div class="contact-col">
+        <p>Sobre nosotros</p>
+        <p>Blog</p>
+        <p>Contáctanos</p>
+    </div>
+    <div class="contact-col">
+        <p>Carta de alérgenos</p>
+        <p>Política de privacidad</p>
+        <p>Aviso legal</p>
+    </div>
+</div>
+<%# -------> SOCIAL MEDIA SECTION <------- %>
+<div class="social-media-section">
+    <ul class="social-media-flex">
+        <li><i class="fab fa-instagram social-media-icon"></i></li>
+        <li><i class="fab fa-facebook-square social-media-icon"></i></li>
+        <li><i class="fab fa-twitter social-media-icon"></i></li>
+        <li><i class="fab fa-pinterest social-media-icon"></i></li>
+    </ul>
+</div>
+    
+
+
