@@ -16,3 +16,18 @@
     font-size: 36px;
     color: $black;
 }
+
+@media only screen and (min-width: 500px) {
+    .social-media-flex {
+        display:flex;
+        list-style-type: none;
+        justify-content: space-around;
+        margin-block-start: 0;
+        padding-inline-start: 0;
+    }
+
+    .social-media-section {
+        padding-right: 40vw;
+        padding-left: 40vw;
+    }
+}
