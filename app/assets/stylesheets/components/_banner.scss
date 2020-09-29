@@ -1,6 +1,6 @@
 .banner-img {
     object-fit: cover;
-    height: 56vh;
+    height: 66vh;
     width: 100%;
     display:flex;
     
@@ -56,7 +56,7 @@
   @media only screen and (min-height: 600px) {
       .banner-img {
         object-fit: cover;
-        height: 59vh;
+        height: 58vh;
         width: 100%;
         display:flex;
     }
@@ -65,8 +65,18 @@
   @media only screen and (min-height: 720px) {
     .banner-img {
       object-fit: cover;
-      height: 61vh;
+      height: 60vh;
       width: 100%;
       display:flex;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .control-prev {
+    display:none;
+  }
+
+  .control-next {
+    display:none;
   }
 }
