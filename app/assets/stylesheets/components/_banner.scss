@@ -1,6 +1,9 @@
 .banner-img {
     height: 395px;
     object-fit: cover;
+    width: 100%;
+    display:flex;
+    
 }
 
 .carousel-indicators li {
@@ -17,4 +20,35 @@
 
   ol.carousel-indicators {
       position:relative
+  }
+
+  .control-position {
+    background-color: $black;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+  }
+
+  .control-flex {
+    display:flex;
+    justify-content: space-between
+  }
+
+  .control-prev {
+    top: 40%;
+    left: -6%;
+  }
+
+  .control-next {
+    top: 40%;
+    right: -6%;
+  }
+
+  .carousel-inner {
+    position: relative;
+    display:flex;
+  }
+
+  .main-carousel {
+    overflow-x: hidden;
   }

@@ -1,6 +1,10 @@
+.landing-title {
+    margin-top: 60px;
+}
+
 .bestseller-section {
     display:flex;
-    overflow-x: scroll;
+    overflow-x: scroll; //Will be hidden on bigger devices
     margin-top: 60px;
     margin-bottom: 60px !important;
 }
@@ -69,3 +73,32 @@
 
 
 }
+
+
+@media only screen and (min-width: 450px) {
+
+    .bestseller-section {
+        width:100%;
+        display: grid;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto; 
+        row-gap: 45px;
+        margin-top: 100px;
+        margin-bottom: 200px !important;
+    }
+
+    .bestseller-h3 {
+        text-align: center;
+        h3 {
+            text-align: center
+        }
+    }
+
+    .landing-title {
+        margin-top: 50px;
+    }
+
+}
+
