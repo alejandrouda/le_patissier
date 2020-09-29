@@ -1,6 +1,6 @@
 .banner-img {
-    height: 395px;
     object-fit: cover;
+    height: 56vh;
     width: 100%;
     display:flex;
     
@@ -52,3 +52,21 @@
   .main-carousel {
     overflow-x: hidden;
   }
+
+  @media only screen and (min-height: 600px) {
+      .banner-img {
+        object-fit: cover;
+        height: 59vh;
+        width: 100%;
+        display:flex;
+    }
+  }
+
+  @media only screen and (min-height: 720px) {
+    .banner-img {
+      object-fit: cover;
+      height: 61vh;
+      width: 100%;
+      display:flex;
+  }
+}

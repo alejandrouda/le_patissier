@@ -1,11 +1,14 @@
 <%= render 'shared/navbar' %>
 <div class="big-container">
-    <%= render 'shared/banner' %>
-
-    <div class="main-container">
+    <div class="row-landing">
+        <%= render 'shared/banner' %>
         <%# -------> NUESTRA TIENDA BUTTON <------- %>
+        <div class="main-container">
             <%= link_to "Nuestra tienda", "#", class: "large-button"%>
+        </div>
+    </div>
         <%# -------> BESTESELLER SECTION<------- %>
+        <div class="main-container">
         <h2 class="landing-title">Los más vendidos</h2>
         <div class="bestseller-section">
             <div class="card-container mr-4">

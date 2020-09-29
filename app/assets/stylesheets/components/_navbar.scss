@@ -4,6 +4,7 @@
   position: sticky;
   top: 0;
   z-index: 50;
+  height: 21vh;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -11,8 +12,8 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 210px;
-  height: 110px;
+  width: 250px;
+  height: 130px;
   left: 85px;
 }
 
@@ -43,4 +44,12 @@ float: right !important;
 .dropdown-position {
   margin-top: -80px;
   margin-left: 30px;
+}
+
+@media only screen and (max-height: 720px) {
+  .navbar-lewagon .navbar-brand img {
+    width: 60vw;
+    height: 18vh;
+    left: 85px;
+  }
 }
