@@ -1,0 +1,19 @@
+.product-pill{
+    width: 100%;
+    text-align: center;
+    h4{
+        color: $black;
+        font-size: 22px;
+        font-weight: bold;
+        font-family: $headers_font;
+    }
+}
+
+.pills-container {
+    display: flex;
+    justify-content: space-between;
+    a, a:active, a:focus, a:hover, a:visited {
+        text-decoration: none;
+        border-bottom: 1px solid $orange;
+    }
+}
