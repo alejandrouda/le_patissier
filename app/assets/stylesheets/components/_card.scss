@@ -85,7 +85,7 @@
 
 .product-card-container {
   width: 92%;
-  margin: 25px auto;
+  margin: 30px auto;
   border-radius: 25px;
   p {
     text-align: center;
@@ -108,6 +108,11 @@
     font-weight: 700;
     font-family: $headers-font;
     text-align: center;
+  }
+  p {
+    margin-bottom: 0;
+    padding-top: 4px;
+    padding-bottom: 6px;
   }
 }
 
