@@ -1,7 +1,6 @@
 const tabsContainer = document.querySelector('.products__tab-container');
 const productsTab = document.querySelectorAll('.products__tab');
 const tabsContent = document.querySelectorAll('.products__content');
-const tabActive = document.querySelector('.products__content--active');
 
 const tabs = function () {
   tabsContainer.addEventListener('click', function (event) {
