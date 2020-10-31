@@ -1,102 +1,126 @@
-.large-button, .large-button:hover, .large-button:active {
-    background-color: $blue;
-    font-family: 'Open Sans';
-    font-weight: 600;
-    font-size: 20px;
-    color: $white;
-    text-decoration: none;
-    text-align: center;
-    padding: 15px 25px;
-    border-radius: 5px;
-    display: block;
-    box-shadow: 1px 0px 10px #00000047;
-    width: 100%;
-    text-decoration: none;
+.large-button,
+.large-button:hover,
+.large-button:active {
+  background-color: $blue;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 20px;
+  color: $white;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 25px;
+  border-radius: 5px;
+  display: block;
+  box-shadow: 1px 0px 10px #00000047;
+  width: 100%;
+  text-decoration: none;
 }
 
 .lg-button {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 5px;
-    background-color: $blue;
-    color: $white;
-    text-decoration: none;
-    display: inline-block;
-    margin: 0 auto;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 5px;
+  background-color: $blue;
+  color: $white;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 auto;
 }
 
 .sm-button {
-    height: 40px;
-    width: 80px;
-    text-align: center;
-    color: $white;
-    background-color: $blue;
-    text-decoration: none;
-    display: inline-block;
-    margin: 0 auto;
+  height: 40px;
+  width: 80px;
+  text-align: center;
+  color: $white;
+  background-color: $blue;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 auto;
 }
 
-.orange-button, .orange-button:active, .orange-button:hover {
-    background-color: $orange;
-    font-family: $headers-font;
-    font-weight: 700;
-    font-size: 21px;
-    color: $black;
-    text-decoration: none;
-    text-align: right;
-    padding: 20px 80px;
-    border-radius: 5px;
-    display: block;
-    box-shadow: 1px 0px 10px #00000047;
-    width: 100%;
-    text-decoration: none;
+.orange-button,
+.orange-button:active,
+.orange-button:hover {
+  background-color: $orange;
+  font-family: $headers-font;
+  font-weight: 700;
+  font-size: 21px;
+  color: $black;
+  text-decoration: none;
+  text-align: right;
+  padding: 20px 80px;
+  border-radius: 5px;
+  display: block;
+  box-shadow: 1px 0px 10px #00000047;
+  width: 100%;
+  text-decoration: none;
 
-  
-    a {
-      color: rgb(20, 20, 20);
-      text-decoration: none;
-    }
+  a {
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+  }
 }
 
 .button-container {
-    display:flex;
-    position:relative;
+  display: flex;
+  position: relative;
 }
 
 .box-position {
-    position:absolute;
-    z-index:2;
-    left: 40px;
-    top: 12px;
-
+  position: absolute;
+  z-index: 2;
+  left: 40px;
+  top: 12px;
 }
 
 .link {
-    color:$orange;
-    text-align:center;
-    display:block;
-    padding-bottom: 10px;
-    font-family: $body-font;
-    font-weight: 700;
-    font-size: 15px;
-    a, a:hover, a:visited, a:link, a:active, a:focus {
-        color: $orange;
-        text-decoration: none;
-      }
-    }
+  color: $orange;
+  text-align: center;
+  display: block;
+  padding-bottom: 10px;
+  font-family: $body-font;
+  font-weight: 700;
+  font-size: 15px;
+  a,
+  a:hover,
+  a:visited,
+  a:link,
+  a:active,
+  a:focus {
+    color: $orange;
+    text-decoration: none;
+  }
+}
+
+.btn-card {
+  position: relative;
+}
+
+.circle-btn {
+  position: absolute;
+  background-color: $light-blue;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.445);
+  border: none;
+  color: white;
+  width: 60px;
+  height: 60px;
+  font-size: 40px;
+  font-weight: 600;
+  border-radius: 50%;
+  bottom: -28px;
+  right: 10px;
+}
 
 @media only screen and (min-width: 450px) {
-    .large-button {
-        display: none;
-    }
+  .large-button {
+    display: none;
+  }
 
-    .button-container {
-        display:none;
-    }
-    
-
+  .button-container {
+    display: none;
+  }
 }

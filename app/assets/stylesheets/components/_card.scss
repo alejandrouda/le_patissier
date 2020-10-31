@@ -85,7 +85,7 @@
 
 .product-card-container {
   width: 92%;
-  margin: 50px auto;
+  margin: 25px auto;
   border-radius: 25px;
   p {
     text-align: center;
@@ -99,9 +99,9 @@
 }
 
 .product-card-h3 {
-  padding-top: 20px;
   background-color: $light-orange;
   border-radius: 0 0 25px 25px;
+  padding-top: 20px;
   h3 {
     color: $black;
     font-size: 22px;

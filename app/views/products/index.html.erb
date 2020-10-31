@@ -1,18 +1,24 @@
-<%= render 'shared/navbar' %> <%# -------> PILLS <------- %>
+<%= render 'shared/navbar' %> 
+
+<%# -------> TABS <------- %>
 
 <div class="big-container">
   <div class="products">
+  <div class="tabs-sticky">
     <div class="products__tab-container">
       <a class="products__tab products__tab--1 products__tab--active" data-tab="1"
-        ><h4>Desayunos</h4></a
-      >
+        ><h4>Desayunos</h4></a>
       <a class="products__tab products__tab--2" data-tab="2"><h4>Buffet</h4></a>
       <a class="products__tab products__tab--3" data-tab="3"><h4>Bandejas</h4></a>
     </div>
+  </div>
 
     <div class="products__content products__content--1 products__content--active">
       <div class="product-card-container">
-        <img src="https://res.cloudinary.com/dqstmox0s/image/upload/v1600945856/Components/05_ALC_coffret_de_8_mini_viennoiseries_2_900x_s2ihr3.jpg" alt="Croissant" class=product-card-img>
+        <div class="btn-card">
+          <img src="https://res.cloudinary.com/dqstmox0s/image/upload/v1600945856/Components/05_ALC_coffret_de_8_mini_viennoiseries_2_900x_s2ihr3.jpg" alt="Croissant" class=product-card-img>
+          <button class="circle-btn">+</button>
+        </div>
         <div class="product-card-h3">
             <h3>Desayuno individual</h3>
             <p>Celebra a tus clientes, reconoce a tus empleados, y promueve la cultura de la empresa</p>
@@ -22,7 +28,10 @@
         </div> 
       </div>
       <div class="product-card-container">
-        <img src="https://res.cloudinary.com/dqstmox0s/image/upload/v1601305775/Components/offre-a-la-carte_f0dr5r.jpg" alt="Croissant" class=product-card-img>
+        <div class="btn-card">
+          <img src="https://res.cloudinary.com/dqstmox0s/image/upload/v1601305775/Components/offre-a-la-carte_f0dr5r.jpg" alt="Croissant" class=product-card-img>
+          <button class="circle-btn">+</button>
+        </div>
         <div class="product-card-h3">
             <h3>Regalos corporativos</h3>
             <p>Celebra a tus clientes, reconoce a tus empleados, y promueve la cultura de la empresa</p>
@@ -32,7 +41,10 @@
         </div> 
       </div>
       <div class="product-card-container">
-        <img src="https://res.cloudinary.com/dqstmox0s/image/upload/v1600945850/Components/bread-1284438-1920_derylj.jpg" alt="Croissant" class=product-card-img>
+        <div class="btn-card">
+          <img src="https://res.cloudinary.com/dqstmox0s/image/upload/v1600945850/Components/bread-1284438-1920_derylj.jpg" alt="Croissant" class=product-card-img>
+          <button class="circle-btn">+</button>
+        </div>
         <div class="product-card-h3">
             <h3>Regalos corporativos</h3>
             <p>Celebra a tus clientes, reconoce a tus empleados, y promueve la cultura de la empresa</p>
@@ -44,7 +56,10 @@
     </div>
     <div class="products__content products__content--2">
       <div class="product-card-container">
-        <img src="https://res.cloudinary.com/dqstmox0s/image/upload/v1600945850/Components/bread-1284438-1920_derylj.jpg" alt="Croissant" class=product-card-img>
+        <div class="btn-card">
+          <img src="https://res.cloudinary.com/dqstmox0s/image/upload/v1600945850/Components/bread-1284438-1920_derylj.jpg" alt="Croissant" class=product-card-img>
+          <button class="circle-btn">+</button>
+        </div>
         <div class="product-card-h3">
             <h3>Buffet a domicilio</h3>
             <p>Celebra a tus clientes, reconoce a tus empleados, y promueve la cultura de la empresa</p>
@@ -54,7 +69,10 @@
         </div> 
       </div>
       <div class="product-card-container">
-        <img src="https://res.cloudinary.com/dqstmox0s/image/upload/v1600958432/Components/photo-1572928899385-6dc3b05531ce_vkbr3u.jpg" alt="Croissant" class=product-card-img>
+        <div class="btn-card">
+          <img src="https://res.cloudinary.com/dqstmox0s/image/upload/v1600958432/Components/photo-1572928899385-6dc3b05531ce_vkbr3u.jpg" alt="Croissant" class=product-card-img>
+          <button class="circle-btn">+</button>
+        </div>
         <div class="product-card-h3">
             <h3>Regalos corporativos</h3>
             <p>Celebra a tus clientes, reconoce a tus empleados, y promueve la cultura de la empresa</p>
@@ -64,7 +82,10 @@
         </div> 
       </div>
       <div class="product-card-container">
-        <img src="https://res.cloudinary.com/dqstmox0s/image/upload/v1601305775/Components/offre-a-la-carte_f0dr5r.jpg" alt="Croissant" class=product-card-img>
+        <div class="btn-card">
+          <img src="https://res.cloudinary.com/dqstmox0s/image/upload/v1601305775/Components/offre-a-la-carte_f0dr5r.jpg" alt="Croissant" class=product-card-img>
+          <button class="circle-btn">+</button>
+        </div>
         <div class="product-card-h3">
             <h3>Regalos corporativos</h3>
             <p>Celebra a tus clientes, reconoce a tus empleados, y promueve la cultura de la empresa</p>
@@ -76,7 +97,10 @@
     </div>
     <div class="products__content products__content--3">
       <div class="product-card-container">
-        <img src="https://res.cloudinary.com/dqstmox0s/image/upload/v1600957642/Components/photo-1587339144367-f1cacbecac82_uimzwz.jpg" alt="Croissant" class=service-card-img>
+        <div class="btn-card">
+          <img src="https://res.cloudinary.com/dqstmox0s/image/upload/v1600957642/Components/photo-1587339144367-f1cacbecac82_uimzwz.jpg" alt="Croissant" class=service-card-img>
+          <button class="circle-btn">+</button>
+        </div>
         <div class="product-card-h3">
             <h3>Pancakes</h3>
             <p>Celebra a tus clientes, reconoce a tus empleados, y promueve la cultura de la empresa</p>
@@ -86,7 +110,10 @@
         </div> 
       </div>
       <div class="product-card-container">
-        <img src="https://res.cloudinary.com/dqstmox0s/image/upload/v1600946425/Components/photo-1579306194872-64d3b7bac4c2_ubwlrk.jpg" alt="Croissant" class=product-card-img>
+        <div class="btn-card">
+          <img src="https://res.cloudinary.com/dqstmox0s/image/upload/v1600946425/Components/photo-1579306194872-64d3b7bac4c2_ubwlrk.jpg" alt="Croissant" class=product-card-img>
+          <button class="circle-btn">+</button>
+        </div>
         <div class="product-card-h3">
             <h3>Regalos corporativos</h3>
             <p>Celebra a tus clientes, reconoce a tus empleados, y promueve la cultura de la empresa</p>
@@ -96,7 +123,10 @@
         </div> 
       </div>
       <div class="product-card-container">
-        <img src="https://res.cloudinary.com/dqstmox0s/image/upload/v1600957640/Components/photo-1555507036-ab1f4038808a_c6ef0k.jpg" alt="Croissant" class=product-card-img>
+        <div class="btn-card">
+          <img src="https://res.cloudinary.com/dqstmox0s/image/upload/v1600957640/Components/photo-1555507036-ab1f4038808a_c6ef0k.jpg" alt="Croissant" class=product-card-img>
+          <button class="circle-btn">+</button>
+        </div>
         <div class="product-card-h3">
             <h3>Regalos corporativos</h3>
             <p>Celebra a tus clientes, reconoce a tus empleados, y promueve la cultura de la empresa</p>
@@ -112,3 +142,5 @@
     <div id="borderLeft"></div>
   </div>
 </div>
+
+<%= render 'shared/footer' %> 
