@@ -1,0 +1,30 @@
+.show-img {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.product-show {
+  background-color: $light-orange;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.product-description {
+  margin: 0px auto;
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 20px 20px 0 20px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  h3 {
+    color: $black;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: $headers-font;
+  }
+  p {
+    padding-top: 10px;
+    margin-bottom: 6px;
+  }
+}

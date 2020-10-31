@@ -1,1 +1,18 @@
-This is the showwwwwwww
+<%= render 'shared/navbar' %>
+<div class="big-container">
+    <img src="https://res.cloudinary.com/dqstmox0s/image/upload/v1601305775/Components/offre-a-la-carte_f0dr5r.jpg" alt="Croissant" class=show-img>
+    <div class="product-show">
+        <div class="main-container">
+            <div class="product-description">
+                <h3>Desayuno individual</h3>
+                <p>2 Media lunas, degustación de nuestras tartas, pancakes con sirope de arce y frutos rojos, y café frío a gusto.</p>
+                <div class="price">
+                    <h3>16,20</h3>
+                </div>
+            </div>
+        </div>
+            <div class="main-container">
+                <%= link_to "Añadir al carrito",products_path , class: "large-button"%>
+            </div>
+    </div>
+</div>
