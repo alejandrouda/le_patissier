@@ -1,17 +1,26 @@
-<%= render 'shared/navbar' %>
-<%# -------> PILLS <------- %>
-<div class="big-container">
-    <div class="main-container">
-            <ul class="nav nav-pills tab-menu mt-3 pills-container" id="pills-tab" role="tablist">
-                <li class="">
-                    <a class="product-pill " id="own-events-tab" data-toggle="pill" href="#desayunos" role="tab" aria-controls="aperitive" aria-selected="true"><h4>Desayunos</h4></a>
-                </li>
-                <li class="">
-                    <a class="product-pill" id="applied-events-tab" data-toggle="pill" href="#buffet" role="tab" aria-controls="beer" aria-selected="false"><h4>Buffet</h4></a>
-                </li>
-                <li class="">
-                    <a class="product-pill" id="favorites-tab" data-toggle="pill" href="#bandejas" role="tab" aria-controls="rum" aria-selected="false"><h4>Bandejas</h4></a>
-                </li>
-            </ul>
-    </div>
+<%= render 'shared/navbar' %> <%# -------> PILLS <------- %>
+
+
+<div class="products">
+  <div class="products__tab-container">
+    <a class="products__tab products__tab--1 products__tab--active" data-tab="1"
+      ><h4>Desayunos</h4></a
+    >
+    <a class="products__tab products__tab--2" data-tab="2"><h4>Buffet</h4></a>
+    <a class="products__tab products__tab--3" data-tab="3"><h4>Bandejas</h4></a>
+  </div>
+
+  <div class="products__content products__content--1 products__content--active">
+    <p>Tab 1! :)</p>
+  </div>
+  <div class="products__content products__content--2">
+    <p>Tab 2! :)</p>
+  </div>
+  <div class="products__content products__content--3">
+    <p>Tab 3! :)</p>
+  </div>
+
+</div>
+<div id="mainDiv">
+  <div id="borderLeft"></div>
 </div>

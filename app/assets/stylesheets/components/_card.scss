@@ -1,131 +1,123 @@
 .landing-title {
-    margin-top: 60px;
+  margin-top: 60px;
 }
 
 .bestseller-section {
-    display:flex;
-    overflow-x: scroll; //Will be hidden on bigger devices
-    margin-top: 60px;
-    margin-bottom: 60px !important;
+  display: flex;
+  overflow-x: scroll; //Will be hidden on bigger devices
+  margin-top: 80px;
+  margin-bottom: 60px !important;
 }
 
 .bestseller-img {
-    width: 250px;
-    height: 280px;
-    object-fit: cover;
-    border-radius: 25px;
+  width: 250px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 25px;
 }
 
 .card-container {
-    position: relative;
-    text-align: center;
+  position: relative;
+  text-align: center;
 }
 
 .bestseller-h3 {
-    position:absolute;
-    color: white;
-    bottom: 4px;
-    left: 70px;
+  position: absolute;
+  color: white;
+  bottom: 4px;
+  left: 70px;
+  font-size: 25px;
+
+  h3 {
     font-size: 25px;
-
-    h3 {
-        font-size: 25px;
-    }
-
-
+  }
 }
 
 .service-card-section {
-    margin-top: 80px;
-    margin-bottom: 80px !important;
+  margin-top: 80px;
+  margin-bottom: 80px !important;
 }
 
 .service-card-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 25px 25px 0 0;
-} 
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 25px 25px 0 0;
+}
 
 .service-card-container {
-    margin-bottom: 40px;
-    border-radius: 25px;
-    box-shadow: 1px 0px 10px rgba(124, 124, 124, 0.32);
-    p{
-        text-align:center;
-        margin-top: 25px;
-        margin-bottom: 15px;
-        padding: 0 10px 0 10px;
-        color: $black;
-        font-family: $body-font;
-        font-size: 16px;
-    }
+  margin-bottom: 40px;
+  border-radius: 25px;
+  box-shadow: 1px 0px 10px rgba(124, 124, 124, 0.32);
+  p {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 0 10px 0 10px;
+    color: $black;
+    font-family: $body-font;
+    font-size: 16px;
+  }
 }
 
 .service-card-h3 {
-    margin-top: 10px;
-    h3 {
+  margin-top: 10px;
+  h3 {
     color: $black;
     font-size: 22px;
     font-weight: 700;
     font-family: $headers-font;
     text-align: center;
-    }
+  }
 }
 
-
 @media only screen and (max-width: 450px) {
-    .service-title {
-        display:none;
-    }
+  .service-title {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 450px) {
+  .bestseller-section {
+    width: 100%;
+    display: grid;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 45px;
+    margin-top: 100px;
+    margin-bottom: 150px !important;
+  }
 
-    
-
-    .bestseller-section {
-        width:100%;
-        display: grid;
-        overflow-x: hidden;
-        overflow-y: hidden;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto; 
-        row-gap: 45px;
-        margin-top: 100px;
-        margin-bottom: 150px !important;
+  .bestseller-h3 {
+    text-align: center;
+    h3 {
+      text-align: center;
     }
+  }
 
-    .bestseller-h3 {
-        text-align: center;
-        h3 {
-            text-align: center
-        }
+  .landing-title {
+    margin-top: 50px;
+  }
+
+  .service-title {
+    text-align: center;
+    font-weight: 700;
+    font-family: $headers-font;
+    color: $black;
+    margin-bottom: 110px;
+  }
+
+  .service-card-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .service-card-container {
+    width: 30%;
+    p {
+      padding: 10px;
     }
-
-    .landing-title {
-        margin-top: 50px;
-    }
-
-    .service-title {
-        text-align: center;
-        font-weight: 700;
-        font-family: $headers-font;
-        color: $black;
-        margin-bottom: 110px;
-    }
-
-    .service-card-section {
-        display:flex;
-        justify-content: space-between;
-    }
-
-    .service-card-container {
-        width: 30%;
-        p {
-           padding:10px; 
-        }
-    }
-
+  }
 }
-
