@@ -2,9 +2,12 @@
   background-color: $light-orange;
   border-radius: 20px;
   margin-top: 10px;
-  padding: 14px 10px;
+  padding: 20px 16px;
   h3 {
     font-family: $headers-font;
+    font-size: 26px;
+    font-weight: 600;
+    color: $black;
   }
 }
 
@@ -13,9 +16,10 @@
   display: flex;
   justify-content: space-between;
   img {
-    height: 100px;
+    height: 90px;
     width: 90px;
     object-fit: cover;
+    border-radius: 10px 0px 0px 10px;
   }
   h4 {
     font-size: 16px;
@@ -28,15 +32,16 @@
   position: absolute;
   left: 100px;
   top: 27px;
+  p {
+    margin-top: -6px;
+    text-decoration: underline rgba(0, 0, 0, 0.575);
+  }
 }
 
 .second-part {
   position: absolute;
   right: 0px;
   top: 27px;
-  .quantity {
-    background-color: $white;
-  }
 }
 
 .total-cart {
@@ -46,5 +51,14 @@
 }
 
 .line-separator {
-  border-bottom: solid 2px rgba(120, 120, 120, 0.2);
+  border-top: solid 2px rgba(120, 120, 120, 0.2);
+  margin-left: 90px;
+}
+
+.quantity {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-top: -5px;
+  margin-bottom: 14px;
 }
