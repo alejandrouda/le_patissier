@@ -4,7 +4,7 @@
   position: sticky;
   top: 0;
   z-index: 50;
-  padding-top: 0  
+  padding-top: 0;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -29,7 +29,6 @@
 
 .navbar-brand {
   margin-right: 0;
-
 }
 
 .navbar-menu {
@@ -37,8 +36,8 @@
 }
 
 .dropdown-menu-custom {
-position: absolute !important;
-float: right !important;
+  position: absolute !important;
+  float: right !important;
 }
 
 .dropdown-position {
@@ -62,5 +61,3 @@ float: right !important;
     height: 21vh;
   }
 }
-
-

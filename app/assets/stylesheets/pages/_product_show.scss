@@ -12,11 +12,12 @@
 
 .product-description {
   margin: 0px auto;
+  position: relative;
   margin-bottom: 15px;
   text-align: center;
   padding: 20px 20px 0 20px;
   border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.4);
   h3 {
     color: $black;
     font-size: 22px;
@@ -26,5 +27,17 @@
   p {
     padding-top: 10px;
     margin-bottom: 6px;
+  }
+}
+
+.quantity-ui {
+  display: flex;
+  position: relative;
+  h3 {
+    position: absolute;
+    left: 48px;
+    font-size: 22px;
+    font-family: $body-font;
+    color: $black !important;
   }
 }
